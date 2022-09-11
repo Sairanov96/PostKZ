@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Authorization Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="PostKzTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="AuthorizationLoginViewController" customModule="PostKzTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                     <segment title="По логину"/>
                                 </segments>
                                 <connections>
-                                    <action selector="segmentControlClick:" destination="BYZ-38-t0r" eventType="valueChanged" id="tfR-VA-pnt"/>
+                                    <action selector="segmentControlDidTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="yga-wj-D8A"/>
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер мобильного телефона" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qqc-Nh-YRn">
@@ -85,7 +85,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="authorizationButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJY-UI-2Dd"/>
+                                    <action selector="authorizationButtonDidTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="rAF-g0-Xqi"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="У вас еще нет аккаунта post.kz?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNn-WQ-r32">
@@ -130,6 +130,7 @@
                             <constraint firstItem="oG8-yg-4hQ" firstAttribute="top" secondItem="ewu-Qn-ebC" secondAttribute="bottom" constant="28" id="rMI-pD-3K9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xW1-8a-W3n"/>
                     <connections>
                         <outlet property="loginTextField" destination="qqc-Nh-YRn" id="iIb-j1-wEa"/>
                         <outlet property="passwordTextField" destination="V5p-2D-WOs" id="sCw-VV-ehS"/>
@@ -138,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="117"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="116.51785714285714"/>
         </scene>
     </scenes>
     <resources>

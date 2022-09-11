@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		29696D5C28CA588600DEAB9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29696D5B28CA588600DEAB9E /* AppDelegate.swift */; };
 		29696D5E28CA588600DEAB9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29696D5D28CA588600DEAB9E /* SceneDelegate.swift */; };
-		29696D6028CA588600DEAB9E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29696D5F28CA588600DEAB9E /* LoginViewController.swift */; };
+		29696D6028CA588600DEAB9E /* AuthorizationLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29696D5F28CA588600DEAB9E /* AuthorizationLoginViewController.swift */; };
 		29696D6328CA588600DEAB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29696D6128CA588600DEAB9E /* Main.storyboard */; };
 		29696D6528CA588700DEAB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29696D6428CA588700DEAB9E /* Assets.xcassets */; };
 		29696D7728CA6C2100DEAB9E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29696D7628CA6C2100DEAB9E /* UITextField+Extension.swift */; };
+		296E94CB28CCA1CB00A64242 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E94C928CCA1CB00A64242 /* HomeViewController.swift */; };
+		296E94CC28CCA1CB00A64242 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E94CA28CCA1CB00A64242 /* HomeViewController.xib */; };
+		296E94D028CE20CD00A64242 /* MokViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E94CE28CE20CD00A64242 /* MokViewController.swift */; };
+		296E94D128CE20CD00A64242 /* MokViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E94CF28CE20CD00A64242 /* MokViewController.xib */; };
 		29F1BDB528CB11F500F51316 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDB428CB11F500F51316 /* PaddingLabel.swift */; };
 		29F1BDB728CB12C800F51316 /* PhoneUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDB628CB12C800F51316 /* PhoneUserModel.swift */; };
 		29F1BDB928CB13CC00F51316 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDB828CB13CC00F51316 /* AuthorizationService.swift */; };
@@ -25,11 +29,15 @@
 		29696D5828CA588600DEAB9E /* PostKzTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostKzTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29696D5B28CA588600DEAB9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29696D5D28CA588600DEAB9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		29696D5F28CA588600DEAB9E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		29696D5F28CA588600DEAB9E /* AuthorizationLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationLoginViewController.swift; sourceTree = "<group>"; };
 		29696D6228CA588600DEAB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29696D6428CA588700DEAB9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29696D6928CA588700DEAB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29696D7628CA6C2100DEAB9E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		296E94C928CCA1CB00A64242 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		296E94CA28CCA1CB00A64242 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		296E94CE28CE20CD00A64242 /* MokViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokViewController.swift; sourceTree = "<group>"; };
+		296E94CF28CE20CD00A64242 /* MokViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MokViewController.xib; sourceTree = "<group>"; };
 		29F1BDB428CB11F500F51316 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		29F1BDB628CB12C800F51316 /* PhoneUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneUserModel.swift; sourceTree = "<group>"; };
 		29F1BDB828CB13CC00F51316 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
@@ -77,10 +85,10 @@
 		29696D6F28CA6AEC00DEAB9E /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				29F1BDC028CB1E6500F51316 /* Models */,
-				29F1BDC328CB850F00F51316 /* View */,
-				29F1BDC528CB852F00F51316 /* Presenter */,
-				29F1BDC428CB852600F51316 /* Services */,
+				29F1BDC028CB1E6500F51316 /* AuthorizationModels */,
+				29F1BDC328CB850F00F51316 /* AuthorizationView */,
+				29F1BDC528CB852F00F51316 /* AuthorizationPresenter */,
+				29F1BDC428CB852600F51316 /* AuthorizationServices */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -116,6 +124,8 @@
 		29696D7328CA6B6700DEAB9E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				296E94CD28CE209600A64242 /* Mok */,
+				29F1BDC628CB867F00F51316 /* Home */,
 				29696D6F28CA6AEC00DEAB9E /* Authorization */,
 			);
 			path = Modules;
@@ -138,39 +148,57 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		29F1BDC028CB1E6500F51316 /* Models */ = {
+		296E94CD28CE209600A64242 /* Mok */ = {
+			isa = PBXGroup;
+			children = (
+				296E94CE28CE20CD00A64242 /* MokViewController.swift */,
+				296E94CF28CE20CD00A64242 /* MokViewController.xib */,
+			);
+			path = Mok;
+			sourceTree = "<group>";
+		};
+		29F1BDC028CB1E6500F51316 /* AuthorizationModels */ = {
 			isa = PBXGroup;
 			children = (
 				29F1BDB628CB12C800F51316 /* PhoneUserModel.swift */,
 				29F1BDC128CB29CC00F51316 /* UserModelType.swift */,
 				29F1BDBE28CB1BC700F51316 /* LoginUserModel.swift */,
 			);
-			path = Models;
+			path = AuthorizationModels;
 			sourceTree = "<group>";
 		};
-		29F1BDC328CB850F00F51316 /* View */ = {
+		29F1BDC328CB850F00F51316 /* AuthorizationView */ = {
 			isa = PBXGroup;
 			children = (
-				29696D5F28CA588600DEAB9E /* LoginViewController.swift */,
+				29696D5F28CA588600DEAB9E /* AuthorizationLoginViewController.swift */,
 				29696D6128CA588600DEAB9E /* Main.storyboard */,
 			);
-			path = View;
+			path = AuthorizationView;
 			sourceTree = "<group>";
 		};
-		29F1BDC428CB852600F51316 /* Services */ = {
+		29F1BDC428CB852600F51316 /* AuthorizationServices */ = {
 			isa = PBXGroup;
 			children = (
 				29F1BDB828CB13CC00F51316 /* AuthorizationService.swift */,
 			);
-			path = Services;
+			path = AuthorizationServices;
 			sourceTree = "<group>";
 		};
-		29F1BDC528CB852F00F51316 /* Presenter */ = {
+		29F1BDC528CB852F00F51316 /* AuthorizationPresenter */ = {
 			isa = PBXGroup;
 			children = (
 				29F1BDBA28CB169F00F51316 /* LoginPresenter.swift */,
 			);
-			path = Presenter;
+			path = AuthorizationPresenter;
+			sourceTree = "<group>";
+		};
+		29F1BDC628CB867F00F51316 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				296E94C928CCA1CB00A64242 /* HomeViewController.swift */,
+				296E94CA28CCA1CB00A64242 /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296E94D128CE20CD00A64242 /* MokViewController.xib in Resources */,
 				29696D6528CA588700DEAB9E /* Assets.xcassets in Resources */,
 				29696D6328CA588600DEAB9E /* Main.storyboard in Resources */,
+				296E94CC28CCA1CB00A64242 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,8 +275,10 @@
 			files = (
 				29F1BDC228CB29CC00F51316 /* UserModelType.swift in Sources */,
 				29F1BDBF28CB1BC700F51316 /* LoginUserModel.swift in Sources */,
+				296E94CB28CCA1CB00A64242 /* HomeViewController.swift in Sources */,
 				29F1BDBB28CB169F00F51316 /* LoginPresenter.swift in Sources */,
-				29696D6028CA588600DEAB9E /* LoginViewController.swift in Sources */,
+				296E94D028CE20CD00A64242 /* MokViewController.swift in Sources */,
+				29696D6028CA588600DEAB9E /* AuthorizationLoginViewController.swift in Sources */,
 				29F1BDB928CB13CC00F51316 /* AuthorizationService.swift in Sources */,
 				29F1BDB528CB11F500F51316 /* PaddingLabel.swift in Sources */,
 				29696D7728CA6C2100DEAB9E /* UITextField+Extension.swift in Sources */,

@@ -32,4 +32,12 @@ extension UITextField {
         rightView = mailLabel
         rightViewMode = .always
     }
+    
+    func setSearchButton() {
+        let searchButton = UIButton(type: .custom)
+        searchButton.tintColor = .tintColor
+        searchButton.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
+        leftView = searchButton
+        leftViewMode = .always
+    }
 }

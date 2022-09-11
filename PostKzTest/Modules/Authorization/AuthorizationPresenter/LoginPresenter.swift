@@ -8,7 +8,8 @@
 import UIKit
 
 protocol LoginPresenterProtocol {
-    init(view: LoginViewProtocol)
+    
+    var view: LoginViewProtocol! { get set }
     
     func setSegmentControlPlaceholder(with type: UserModelType)
     
@@ -17,12 +18,18 @@ protocol LoginPresenterProtocol {
 
 final class LoginPresenter: LoginPresenterProtocol {
     
-    unowned private let view: LoginViewProtocol
-    private var modelType: UserModelType = .phoneModel
-    private let authorizationService = AuthorizationService()
+    weak var view: LoginViewProtocol!
     
-    required init(view: LoginViewProtocol) {
+    private var modelType: UserModelType = .phoneModel
+    private let authorizationService: AuthorizationServiceProtocol
+    
+    init(view: LoginViewProtocol, service: AuthorizationServiceProtocol) {
         self.view = view
+        self.authorizationService = service
+    }
+    
+    convenience init(view: LoginViewProtocol) {
+        self.init(view: view, service: AuthorizationService())
     }
     
     func setSegmentControlPlaceholder(with type: UserModelType) {

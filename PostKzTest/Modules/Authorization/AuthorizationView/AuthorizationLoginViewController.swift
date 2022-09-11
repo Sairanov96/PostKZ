@@ -13,29 +13,47 @@ protocol LoginViewProtocol: AnyObject {
     func authorizeUser(_ isAuthorize: Bool)
 }
 
-final class LoginViewController: UIViewController {
+final class AuthorizationLoginViewController: UIViewController {
     
-    @IBOutlet weak var loginTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var segmentControlOutlet: UISegmentedControl!
+    @IBOutlet private weak var loginTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var segmentControlOutlet: UISegmentedControl!
     
     private var presenter: LoginPresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupView()
     }
     
     func setupView() {
+        overrideUserInterfaceStyle = .light
+        
         passwordTextField.enablePasswordToggle()
         presenter = LoginPresenter(view: self)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
+}
+
+extension AuthorizationLoginViewController: LoginViewProtocol {
+    func changeSegmentControlPlaceholder(placeholder: String) {
+        loginTextField.placeholder = placeholder
+    }
     
-    @IBAction func segmentControlClick(_ sender: UISegmentedControl) {
+    func authorizeUser(_ isAuthorize: Bool) {
+        if isAuthorize {
+            let homeViewController = HomeViewController()
+            homeViewController.modalPresentationStyle = .fullScreen
+            present(homeViewController, animated: true)
+        }
+    }
+}
+
+private extension AuthorizationLoginViewController {
+    @IBAction func segmentControlDidTap(_ sender: UISegmentedControl) {
         dismissKeyboard()
         loginTextField.text = nil
         
@@ -49,24 +67,13 @@ final class LoginViewController: UIViewController {
             loginTextField.keyboardType = .default
             presenter.setSegmentControlPlaceholder(with: .loginModel)
         }
-        
     }
     
-    @IBAction func authorizationButtonClick(_ sender: UIButton) {
+    @IBAction func authorizationButtonDidTap() {
         presenter.checkAuthorization(login: loginTextField.text, password: passwordTextField.text)
     }
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
-    }
-}
-
-extension LoginViewController: LoginViewProtocol {
-    func changeSegmentControlPlaceholder(placeholder: String) {
-        loginTextField.placeholder = placeholder
-    }
-    
-    func authorizeUser(_ isAuthorize: Bool) {
-        print(isAuthorize)
     }
 }
