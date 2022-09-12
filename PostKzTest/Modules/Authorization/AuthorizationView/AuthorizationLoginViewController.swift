@@ -33,8 +33,11 @@ final class AuthorizationLoginViewController: UIViewController {
         passwordTextField.enablePasswordToggle()
         presenter = LoginPresenter(view: self)
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        self.dismissKeyboard()
+    }
+    
+    @IBAction func showLoginPasswordButtonDidTap(_ sender: UIButton) {
+        displayLoginPassword()
     }
 }
 
@@ -72,8 +75,15 @@ private extension AuthorizationLoginViewController {
     @IBAction func authorizationButtonDidTap() {
         presenter.checkAuthorization(login: loginTextField.text, password: passwordTextField.text)
     }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
+}
+
+private extension AuthorizationLoginViewController {
+    func displayLoginPassword() {
+        let dialogMessage = UIAlertController(title: "Reminder", message: "Login: '111', Password: '111'", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default)
+        
+        dialogMessage.addAction(ok)
+        
+        self.present(dialogMessage, animated: true, completion: nil)
     }
 }

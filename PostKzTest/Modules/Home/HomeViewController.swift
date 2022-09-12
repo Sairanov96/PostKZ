@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
+        
         scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
     
@@ -29,6 +30,10 @@ class HomeViewController: UIViewController {
         showStatusButton.layer.borderColor = UIColor.tintColor.cgColor
         
         searchTextField.setSearchButton()
+        
+        searchTextField.delegate = self
+        
+        self.dismissKeyboard()
     }
     
     private func showMokViewController(_ sender: UIButton) {
@@ -71,5 +76,13 @@ private extension HomeViewController {
     
     @IBAction func paymentButtonDidTap(_ sender: UIButton) {
         showMokViewController(sender)
+    }
+}
+
+extension HomeViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return false
     }
 }

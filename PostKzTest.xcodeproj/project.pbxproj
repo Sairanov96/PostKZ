@@ -17,6 +17,7 @@
 		296E94CC28CCA1CB00A64242 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E94CA28CCA1CB00A64242 /* HomeViewController.xib */; };
 		296E94D028CE20CD00A64242 /* MokViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E94CE28CE20CD00A64242 /* MokViewController.swift */; };
 		296E94D128CE20CD00A64242 /* MokViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E94CF28CE20CD00A64242 /* MokViewController.xib */; };
+		2971CEAD28CF1406001AB0C1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971CEAC28CF1406001AB0C1 /* UIViewController+Extension.swift */; };
 		29F1BDB528CB11F500F51316 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDB428CB11F500F51316 /* PaddingLabel.swift */; };
 		29F1BDB728CB12C800F51316 /* PhoneUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDB628CB12C800F51316 /* PhoneUserModel.swift */; };
 		29F1BDB928CB13CC00F51316 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDB828CB13CC00F51316 /* AuthorizationService.swift */; };
@@ -38,6 +39,7 @@
 		296E94CA28CCA1CB00A64242 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		296E94CE28CE20CD00A64242 /* MokViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokViewController.swift; sourceTree = "<group>"; };
 		296E94CF28CE20CD00A64242 /* MokViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MokViewController.xib; sourceTree = "<group>"; };
+		2971CEAC28CF1406001AB0C1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		29F1BDB428CB11F500F51316 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		29F1BDB628CB12C800F51316 /* PhoneUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneUserModel.swift; sourceTree = "<group>"; };
 		29F1BDB828CB13CC00F51316 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				29696D7628CA6C2100DEAB9E /* UITextField+Extension.swift */,
+				2971CEAC28CF1406001AB0C1 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29F1BDC228CB29CC00F51316 /* UserModelType.swift in Sources */,
+				2971CEAD28CF1406001AB0C1 /* UIViewController+Extension.swift in Sources */,
 				29F1BDBF28CB1BC700F51316 /* LoginUserModel.swift in Sources */,
 				296E94CB28CCA1CB00A64242 /* HomeViewController.swift in Sources */,
 				29F1BDBB28CB169F00F51316 /* LoginPresenter.swift in Sources */,

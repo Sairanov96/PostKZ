@@ -9,7 +9,7 @@ import UIKit
 
 final class MokViewController: UIViewController {
     
-    var textLabelText: String
+    private var textLabelText: String
     
     @IBOutlet private weak var textLabel: UILabel!
     
