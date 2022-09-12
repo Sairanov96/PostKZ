@@ -9,7 +9,7 @@ import UIKit
 
 final class MokViewController: UIViewController {
     
-    private var textLabelText: String
+    private var viewModel: ViewModel
     
     @IBOutlet private weak var textLabel: UILabel!
     
@@ -19,8 +19,8 @@ final class MokViewController: UIViewController {
         setupView()
     }
     
-    init(text: String) {
-        textLabelText = text
+    init(model: ViewModel) {
+        viewModel = model
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -31,6 +31,9 @@ final class MokViewController: UIViewController {
     
     private func setupView() {
         overrideUserInterfaceStyle = .light
-        textLabel.text = textLabelText
+        
+        textLabel.text = viewModel.text
+        textLabel.textColor = viewModel.textColor
+        self.view.backgroundColor = viewModel.backgroundColor
     }
 }

@@ -166,7 +166,7 @@
                                                         <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                     </buttonConfiguration>
                                                     <connections>
-                                                        <action selector="showAllServices:" destination="-1" eventType="touchUpInside" id="G3d-KQ-Q95"/>
+                                                        <action selector="showButtonDidTap:" destination="-1" eventType="touchUpInside" id="nni-cs-gxR"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -204,7 +204,7 @@
                                                                 </attributedString>
                                                             </state>
                                                             <connections>
-                                                                <action selector="callCourierButtonDidTap:" destination="-1" eventType="touchUpInside" id="elB-AZ-wwY"/>
+                                                                <action selector="showButtonDidTap:" destination="-1" eventType="touchUpInside" id="cRs-cQ-C9R"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -245,7 +245,7 @@
                                                                 </attributedString>
                                                             </state>
                                                             <connections>
-                                                                <action selector="bookQueueButtonDidTap:" destination="-1" eventType="touchUpInside" id="LQa-SI-hsy"/>
+                                                                <action selector="showButtonDidTap:" destination="-1" eventType="touchUpInside" id="dmm-PD-h3p"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -286,7 +286,7 @@
                                                                 </attributedString>
                                                             </state>
                                                             <connections>
-                                                                <action selector="sendCardButtonDidTap:" destination="-1" eventType="touchUpInside" id="542-6Y-Fnh"/>
+                                                                <action selector="showButtonDidTap:" destination="-1" eventType="touchUpInside" id="rXA-7R-ZL2"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -336,7 +336,7 @@
                                                                 </attributedString>
                                                             </state>
                                                             <connections>
-                                                                <action selector="findBranchDidTap:" destination="-1" eventType="touchUpInside" id="ZUf-Vo-pmh"/>
+                                                                <action selector="showButtonDidTap:" destination="-1" eventType="touchUpInside" id="Oll-uF-LhH"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -377,7 +377,7 @@
                                                                 </attributedString>
                                                             </state>
                                                             <connections>
-                                                                <action selector="paymentButtonDidTap:" destination="-1" eventType="touchUpInside" id="7qX-Xq-mhI"/>
+                                                                <action selector="showButtonDidTap:" destination="-1" eventType="touchUpInside" id="Z1e-WO-aYe"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -438,7 +438,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
-                                                        <action selector="findStatusButtonDidTap:" destination="-1" eventType="touchUpInside" id="KTz-kp-hSr"/>
+                                                        <action selector="showButtonDidTap:" destination="-1" eventType="touchUpInside" id="hI0-99-9yU"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9r-oU-Z4p">
@@ -450,7 +450,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="scanButtonDidTap:" destination="-1" eventType="touchUpInside" id="946-A2-xps"/>
+                                                        <action selector="showButtonDidTap:" destination="-1" eventType="touchUpInside" id="zJq-j2-Mrg"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
