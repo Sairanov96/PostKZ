@@ -5,8 +5,6 @@
 //  Created by Amir on 09.09.2022.
 //
 
-//import Foundation
-//
 protocol AuthorizationServiceProtocol {
     func checkUser(with model: AuthorizationType) -> Bool
 }
@@ -16,11 +14,14 @@ enum AuthorizationType {
     case authorizationByLogin(LoginUserModel)
 }
 
-class AuthorizationService: AuthorizationServiceProtocol {
-
+final class AuthorizationService {
     let phoneModel = PhoneUserModel(number: 111, password: "111")
     let loginModel = LoginUserModel(mail: "111@post.kz", password: "111")
-    
+}
+
+
+//MARK: AuthorizationServiceProtocol
+extension AuthorizationService: AuthorizationServiceProtocol {
     func checkUser(with model: AuthorizationType) -> Bool {
         switch model {
         case .authorizationByPhone(let model):

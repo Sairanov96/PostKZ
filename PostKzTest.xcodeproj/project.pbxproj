@@ -15,16 +15,16 @@
 		29696D7728CA6C2100DEAB9E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29696D7628CA6C2100DEAB9E /* UITextField+Extension.swift */; };
 		296E94CB28CCA1CB00A64242 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E94C928CCA1CB00A64242 /* HomeViewController.swift */; };
 		296E94CC28CCA1CB00A64242 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E94CA28CCA1CB00A64242 /* HomeViewController.xib */; };
-		296E94D028CE20CD00A64242 /* MokViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E94CE28CE20CD00A64242 /* MokViewController.swift */; };
-		296E94D128CE20CD00A64242 /* MokViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E94CF28CE20CD00A64242 /* MokViewController.xib */; };
+		296E94D028CE20CD00A64242 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E94CE28CE20CD00A64242 /* MockViewController.swift */; };
+		296E94D128CE20CD00A64242 /* MockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296E94CF28CE20CD00A64242 /* MockViewController.xib */; };
 		2971CEAD28CF1406001AB0C1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971CEAC28CF1406001AB0C1 /* UIViewController+Extension.swift */; };
 		2971CEB128CF176C001AB0C1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971CEB028CF176C001AB0C1 /* HomePresenter.swift */; };
-		2971CEB428CF18BE001AB0C1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971CEB328CF18BE001AB0C1 /* ViewModel.swift */; };
+		2971CEB428CF18BE001AB0C1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971CEB328CF18BE001AB0C1 /* HomeViewModel.swift */; };
 		2971CEB628CF1B57001AB0C1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971CEB528CF1B57001AB0C1 /* UIColor+Extension.swift */; };
 		29F1BDB528CB11F500F51316 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDB428CB11F500F51316 /* PaddingLabel.swift */; };
 		29F1BDB728CB12C800F51316 /* PhoneUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDB628CB12C800F51316 /* PhoneUserModel.swift */; };
 		29F1BDB928CB13CC00F51316 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDB828CB13CC00F51316 /* AuthorizationService.swift */; };
-		29F1BDBB28CB169F00F51316 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDBA28CB169F00F51316 /* LoginPresenter.swift */; };
+		29F1BDBB28CB169F00F51316 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDBA28CB169F00F51316 /* AuthorizationPresenter.swift */; };
 		29F1BDBF28CB1BC700F51316 /* LoginUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDBE28CB1BC700F51316 /* LoginUserModel.swift */; };
 		29F1BDC228CB29CC00F51316 /* UserModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1BDC128CB29CC00F51316 /* UserModelType.swift */; };
 /* End PBXBuildFile section */
@@ -40,16 +40,16 @@
 		29696D7628CA6C2100DEAB9E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		296E94C928CCA1CB00A64242 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		296E94CA28CCA1CB00A64242 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		296E94CE28CE20CD00A64242 /* MokViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokViewController.swift; sourceTree = "<group>"; };
-		296E94CF28CE20CD00A64242 /* MokViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MokViewController.xib; sourceTree = "<group>"; };
+		296E94CE28CE20CD00A64242 /* MockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
+		296E94CF28CE20CD00A64242 /* MockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MockViewController.xib; sourceTree = "<group>"; };
 		2971CEAC28CF1406001AB0C1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		2971CEB028CF176C001AB0C1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		2971CEB328CF18BE001AB0C1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2971CEB328CF18BE001AB0C1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2971CEB528CF1B57001AB0C1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		29F1BDB428CB11F500F51316 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		29F1BDB628CB12C800F51316 /* PhoneUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneUserModel.swift; sourceTree = "<group>"; };
 		29F1BDB828CB13CC00F51316 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
-		29F1BDBA28CB169F00F51316 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		29F1BDBA28CB169F00F51316 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		29F1BDBE28CB1BC700F51316 /* LoginUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserModel.swift; sourceTree = "<group>"; };
 		29F1BDC128CB29CC00F51316 /* UserModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,10 +93,10 @@
 		29696D6F28CA6AEC00DEAB9E /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				29F1BDC028CB1E6500F51316 /* AuthorizationModels */,
-				29F1BDC328CB850F00F51316 /* AuthorizationView */,
-				29F1BDC528CB852F00F51316 /* AuthorizationPresenter */,
-				29F1BDC428CB852600F51316 /* AuthorizationServices */,
+				29F1BDC028CB1E6500F51316 /* Models */,
+				29F1BDC328CB850F00F51316 /* View */,
+				29F1BDC528CB852F00F51316 /* Presenter */,
+				29F1BDC428CB852600F51316 /* Services */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 		29696D7328CA6B6700DEAB9E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				296E94CD28CE209600A64242 /* Mok */,
+				296E94CD28CE209600A64242 /* Mock */,
 				29F1BDC628CB867F00F51316 /* Home */,
 				29696D6F28CA6AEC00DEAB9E /* Authorization */,
 			);
@@ -158,81 +158,81 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		296E94CD28CE209600A64242 /* Mok */ = {
+		296E94CD28CE209600A64242 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				296E94CE28CE20CD00A64242 /* MokViewController.swift */,
-				296E94CF28CE20CD00A64242 /* MokViewController.xib */,
+				296E94CE28CE20CD00A64242 /* MockViewController.swift */,
+				296E94CF28CE20CD00A64242 /* MockViewController.xib */,
 			);
-			path = Mok;
+			path = Mock;
 			sourceTree = "<group>";
 		};
-		2971CEAE28CF1734001AB0C1 /* HomeView */ = {
+		2971CEAE28CF1734001AB0C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				296E94C928CCA1CB00A64242 /* HomeViewController.swift */,
 				296E94CA28CCA1CB00A64242 /* HomeViewController.xib */,
 			);
-			path = HomeView;
+			path = View;
 			sourceTree = "<group>";
 		};
-		2971CEAF28CF175D001AB0C1 /* HomePresenter */ = {
+		2971CEAF28CF175D001AB0C1 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				2971CEB028CF176C001AB0C1 /* HomePresenter.swift */,
 			);
-			path = HomePresenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
-		2971CEB228CF18B3001AB0C1 /* HomeModel */ = {
+		2971CEB228CF18B3001AB0C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2971CEB328CF18BE001AB0C1 /* ViewModel.swift */,
+				2971CEB328CF18BE001AB0C1 /* HomeViewModel.swift */,
 			);
-			path = HomeModel;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		29F1BDC028CB1E6500F51316 /* AuthorizationModels */ = {
+		29F1BDC028CB1E6500F51316 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				29F1BDB628CB12C800F51316 /* PhoneUserModel.swift */,
 				29F1BDC128CB29CC00F51316 /* UserModelType.swift */,
 				29F1BDBE28CB1BC700F51316 /* LoginUserModel.swift */,
 			);
-			path = AuthorizationModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		29F1BDC328CB850F00F51316 /* AuthorizationView */ = {
+		29F1BDC328CB850F00F51316 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				29696D5F28CA588600DEAB9E /* AuthorizationLoginViewController.swift */,
 				29696D6128CA588600DEAB9E /* Main.storyboard */,
 			);
-			path = AuthorizationView;
+			path = View;
 			sourceTree = "<group>";
 		};
-		29F1BDC428CB852600F51316 /* AuthorizationServices */ = {
+		29F1BDC428CB852600F51316 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				29F1BDB828CB13CC00F51316 /* AuthorizationService.swift */,
 			);
-			path = AuthorizationServices;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		29F1BDC528CB852F00F51316 /* AuthorizationPresenter */ = {
+		29F1BDC528CB852F00F51316 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				29F1BDBA28CB169F00F51316 /* LoginPresenter.swift */,
+				29F1BDBA28CB169F00F51316 /* AuthorizationPresenter.swift */,
 			);
-			path = AuthorizationPresenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		29F1BDC628CB867F00F51316 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2971CEB228CF18B3001AB0C1 /* HomeModel */,
-				2971CEAF28CF175D001AB0C1 /* HomePresenter */,
-				2971CEAE28CF1734001AB0C1 /* HomeView */,
+				2971CEB228CF18B3001AB0C1 /* Model */,
+				2971CEAF28CF175D001AB0C1 /* Presenter */,
+				2971CEAE28CF1734001AB0C1 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				296E94D128CE20CD00A64242 /* MokViewController.xib in Resources */,
+				296E94D128CE20CD00A64242 /* MockViewController.xib in Resources */,
 				29696D6528CA588700DEAB9E /* Assets.xcassets in Resources */,
 				29696D6328CA588600DEAB9E /* Main.storyboard in Resources */,
 				296E94CC28CCA1CB00A64242 /* HomeViewController.xib in Resources */,
@@ -313,12 +313,12 @@
 				2971CEAD28CF1406001AB0C1 /* UIViewController+Extension.swift in Sources */,
 				29F1BDBF28CB1BC700F51316 /* LoginUserModel.swift in Sources */,
 				296E94CB28CCA1CB00A64242 /* HomeViewController.swift in Sources */,
-				29F1BDBB28CB169F00F51316 /* LoginPresenter.swift in Sources */,
-				296E94D028CE20CD00A64242 /* MokViewController.swift in Sources */,
+				29F1BDBB28CB169F00F51316 /* AuthorizationPresenter.swift in Sources */,
+				296E94D028CE20CD00A64242 /* MockViewController.swift in Sources */,
 				29696D6028CA588600DEAB9E /* AuthorizationLoginViewController.swift in Sources */,
 				2971CEB628CF1B57001AB0C1 /* UIColor+Extension.swift in Sources */,
 				2971CEB128CF176C001AB0C1 /* HomePresenter.swift in Sources */,
-				2971CEB428CF18BE001AB0C1 /* ViewModel.swift in Sources */,
+				2971CEB428CF18BE001AB0C1 /* HomeViewModel.swift in Sources */,
 				29F1BDB928CB13CC00F51316 /* AuthorizationService.swift in Sources */,
 				29F1BDB528CB11F500F51316 /* PaddingLabel.swift in Sources */,
 				29696D7728CA6C2100DEAB9E /* UITextField+Extension.swift in Sources */,

@@ -5,11 +5,9 @@
 //  Created by Amir on 12.09.2022.
 //
 
-import Foundation
 import UIKit
 
 protocol HomePresenterProtocol {
-    
     var view: HomeViewProtocol! { get set }
     
     func setTextToLabel(text: String)
@@ -26,11 +24,11 @@ final class HomePresenter: HomePresenterProtocol {
         let backgroundColor = UIColor.random
         let textColor = UIColor.random
         
-        let viewModel = ViewModel(text: text,
+        let viewModel = HomeViewModel(text: text,
                                   textColor: textColor,
                                   backgroundColor: backgroundColor)
-        
         
         view.showController(viewModel: viewModel)
     }
 }
+

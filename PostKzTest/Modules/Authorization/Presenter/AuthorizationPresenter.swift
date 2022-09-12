@@ -1,34 +1,31 @@
 //
-//  LoginPresenter.swift
+//  AuthorizationPresenter.swift
 //  PostKzTest
 //
 //  Created by Amir on 09.09.2022.
 //
 
-import UIKit
 
-protocol LoginPresenterProtocol {
-    
-    var view: LoginViewProtocol! { get set }
+protocol AuthorizationPresenterProtocol {
+    var view: AuthorizationViewProtocol! { get set }
     
     func setSegmentControlPlaceholder(with type: UserModelType)
-    
     func checkAuthorization(login: String?, password: String?)
 }
 
-final class LoginPresenter: LoginPresenterProtocol {
+final class AuthorizationPresenter: AuthorizationPresenterProtocol {
     
-    weak var view: LoginViewProtocol!
+    weak var view: AuthorizationViewProtocol!
     
     private var modelType: UserModelType = .phoneModel
     private let authorizationService: AuthorizationServiceProtocol
     
-    init(view: LoginViewProtocol, service: AuthorizationServiceProtocol) {
+    init(view: AuthorizationViewProtocol, service: AuthorizationServiceProtocol) {
         self.view = view
         self.authorizationService = service
     }
     
-    convenience init(view: LoginViewProtocol) {
+    convenience init(view: AuthorizationViewProtocol) {
         self.init(view: view, service: AuthorizationService())
     }
     

@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  AuthorizationLoginViewController.swift
 //  PostKzTest
 //
 //  Created by Amir on 08.09.2022.
@@ -7,9 +7,8 @@
 
 import UIKit
 
-protocol LoginViewProtocol: AnyObject {
+protocol AuthorizationViewProtocol: AnyObject {
     func changeSegmentControlPlaceholder(placeholder: String)
-    
     func authorizeUser(_ isAuthorize: Bool)
 }
 
@@ -19,7 +18,7 @@ final class AuthorizationLoginViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var segmentControlOutlet: UISegmentedControl!
     
-    private var presenter: LoginPresenterProtocol!
+    private var presenter: AuthorizationPresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,17 +30,14 @@ final class AuthorizationLoginViewController: UIViewController {
         overrideUserInterfaceStyle = .light
         
         passwordTextField.enablePasswordToggle()
-        presenter = LoginPresenter(view: self)
+        presenter = AuthorizationPresenter(view: self)
         
         self.dismissKeyboard()
     }
     
-    @IBAction func showLoginPasswordButtonDidTap(_ sender: UIButton) {
-        displayLoginPassword()
-    }
 }
-
-extension AuthorizationLoginViewController: LoginViewProtocol {
+//MARK: AuthorizationViewProtocol
+extension AuthorizationLoginViewController: AuthorizationViewProtocol {
     func changeSegmentControlPlaceholder(placeholder: String) {
         loginTextField.placeholder = placeholder
     }
@@ -55,7 +51,12 @@ extension AuthorizationLoginViewController: LoginViewProtocol {
     }
 }
 
+//MARK: IBAction methods
 private extension AuthorizationLoginViewController {
+    @IBAction func showLoginPasswordButtonDidTap(_ sender: UIButton) {
+        displayLoginPassword()
+    }
+    
     @IBAction func segmentControlDidTap(_ sender: UISegmentedControl) {
         dismissKeyboard()
         loginTextField.text = nil
@@ -77,6 +78,7 @@ private extension AuthorizationLoginViewController {
     }
 }
 
+//MARK: Private methods
 private extension AuthorizationLoginViewController {
     func displayLoginPassword() {
         let dialogMessage = UIAlertController(title: "Reminder", message: "Login: '111', Password: '111'", preferredStyle: .alert)

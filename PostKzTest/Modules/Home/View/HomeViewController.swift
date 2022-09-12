@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeViewProtocol: AnyObject {
-    func showController(viewModel: ViewModel)
+    func showController(viewModel: HomeViewModel)
 }
 
 final class HomeViewController: UIViewController {
@@ -43,14 +43,15 @@ final class HomeViewController: UIViewController {
     }
 }
 
+//MARK: HomeViewProtocol
 extension HomeViewController: HomeViewProtocol {
-    func showController(viewModel: ViewModel) {
-        let mokViewController = MokViewController(model: viewModel)
+    func showController(viewModel: HomeViewModel) {
+        let mokViewController = MockViewController(model: viewModel)
         
         show(mokViewController, sender: self)
     }
 }
-
+//MARK: IBAction methods
 private extension HomeViewController {
     @IBAction func showButtonDidTap(_ sender: UIButton) {
         guard let text = sender.titleLabel?.text else { return }
@@ -59,6 +60,7 @@ private extension HomeViewController {
     }
 }
 
+//MARK: UITextFieldDelegate
 extension HomeViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
