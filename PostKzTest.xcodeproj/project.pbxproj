@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292F98A628CF420700794532 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F98A528CF420700794532 /* AuthorizationViewController.swift */; };
+		292F98A828CF453700794532 /* UISegmentControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F98A728CF453700794532 /* UISegmentControl+Extension.swift */; };
 		29696D5C28CA588600DEAB9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29696D5B28CA588600DEAB9E /* AppDelegate.swift */; };
-		29696D5E28CA588600DEAB9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29696D5D28CA588600DEAB9E /* SceneDelegate.swift */; };
-		29696D6028CA588600DEAB9E /* AuthorizationLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29696D5F28CA588600DEAB9E /* AuthorizationLoginViewController.swift */; };
-		29696D6328CA588600DEAB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29696D6128CA588600DEAB9E /* Main.storyboard */; };
 		29696D6528CA588700DEAB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29696D6428CA588700DEAB9E /* Assets.xcassets */; };
 		29696D7728CA6C2100DEAB9E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29696D7628CA6C2100DEAB9E /* UITextField+Extension.swift */; };
 		296E94CB28CCA1CB00A64242 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E94C928CCA1CB00A64242 /* HomeViewController.swift */; };
@@ -30,11 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		292F98A528CF420700794532 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		292F98A728CF453700794532 /* UISegmentControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentControl+Extension.swift"; sourceTree = "<group>"; };
 		29696D5828CA588600DEAB9E /* PostKzTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostKzTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29696D5B28CA588600DEAB9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29696D5D28CA588600DEAB9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		29696D5F28CA588600DEAB9E /* AuthorizationLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationLoginViewController.swift; sourceTree = "<group>"; };
-		29696D6228CA588600DEAB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29696D6428CA588700DEAB9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29696D6928CA588700DEAB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29696D7628CA6C2100DEAB9E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				29696D5B28CA588600DEAB9E /* AppDelegate.swift */,
-				29696D5D28CA588600DEAB9E /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -154,6 +151,7 @@
 				29696D7628CA6C2100DEAB9E /* UITextField+Extension.swift */,
 				2971CEAC28CF1406001AB0C1 /* UIViewController+Extension.swift */,
 				2971CEB528CF1B57001AB0C1 /* UIColor+Extension.swift */,
+				292F98A728CF453700794532 /* UISegmentControl+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,8 +203,7 @@
 		29F1BDC328CB850F00F51316 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				29696D5F28CA588600DEAB9E /* AuthorizationLoginViewController.swift */,
-				29696D6128CA588600DEAB9E /* Main.storyboard */,
+				292F98A528CF420700794532 /* AuthorizationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -297,7 +294,6 @@
 			files = (
 				296E94D128CE20CD00A64242 /* MockViewController.xib in Resources */,
 				29696D6528CA588700DEAB9E /* Assets.xcassets in Resources */,
-				29696D6328CA588600DEAB9E /* Main.storyboard in Resources */,
 				296E94CC28CCA1CB00A64242 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,31 +311,20 @@
 				296E94CB28CCA1CB00A64242 /* HomeViewController.swift in Sources */,
 				29F1BDBB28CB169F00F51316 /* AuthorizationPresenter.swift in Sources */,
 				296E94D028CE20CD00A64242 /* MockViewController.swift in Sources */,
-				29696D6028CA588600DEAB9E /* AuthorizationLoginViewController.swift in Sources */,
 				2971CEB628CF1B57001AB0C1 /* UIColor+Extension.swift in Sources */,
 				2971CEB128CF176C001AB0C1 /* HomePresenter.swift in Sources */,
 				2971CEB428CF18BE001AB0C1 /* HomeViewModel.swift in Sources */,
 				29F1BDB928CB13CC00F51316 /* AuthorizationService.swift in Sources */,
 				29F1BDB528CB11F500F51316 /* PaddingLabel.swift in Sources */,
 				29696D7728CA6C2100DEAB9E /* UITextField+Extension.swift in Sources */,
+				292F98A628CF420700794532 /* AuthorizationViewController.swift in Sources */,
+				292F98A828CF453700794532 /* UISegmentControl+Extension.swift in Sources */,
 				29696D5C28CA588600DEAB9E /* AppDelegate.swift in Sources */,
 				29F1BDB728CB12C800F51316 /* PhoneUserModel.swift in Sources */,
-				29696D5E28CA588600DEAB9E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		29696D6128CA588600DEAB9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29696D6228CA588600DEAB9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		29696D6A28CA588700DEAB9E /* Debug */ = {
@@ -468,7 +453,6 @@
 				INFOPLIST_FILE = PostKzTest/Core/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,7 +464,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -496,7 +480,6 @@
 				INFOPLIST_FILE = PostKzTest/Core/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,7 +491,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
