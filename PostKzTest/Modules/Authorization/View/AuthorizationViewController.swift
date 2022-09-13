@@ -11,7 +11,7 @@ protocol AuthorizationViewProtocol: AnyObject {
     func authorizeUser(_ isAuthorized: Bool)
 }
 
-class AuthorizationViewController: UIViewController {
+final class AuthorizationViewController: UIViewController {
     
     private var presenter: AuthorizationPresenterProtocol!
     
